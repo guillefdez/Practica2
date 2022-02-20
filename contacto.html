@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.jpg" alt="logo">
+                </a>
+            </div>
+            <div id="cierra">
+                <img src="images/x.svg" id="abre_menu" alt="abre">
+                <img src="images/x.svg" id="cierra_menu" alt="cierra">
+            </div>
+            <nav>                
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="contenido">
+            <section class="cabecera_pagina contacto">
+                <h1>Contacto<br> Acciona infraestructuras</h1>
+            </section>
+            <section class="contenido_pagina">
+                <article class="texto_centrado">
+                    <h2>Contacta con nostros</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum saepe, aut quis, consectetur iure tempore delectus quisquam cupiditate nisi asperiores deleniti temporibus quam cum pariatur repudiandae animi? Impedit, tempora culpa?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis quae nisi eos accusantium, velit minima? Beatae corrupti laboriosam laborum eligendi officiis ut animi, facilis ea, cumque nobis amet aperiam?</p>
+                    <div class="formulario_contacto">
+                        <form action="#" method="post" enctype="multipart/form-data" onSubmit="return enviaForm()">
+                        <div class="col-1">
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                        </div>
+                        <div class="col-2">
+                            <input type="text" id="apellido" name="apellido" required placeholder="Tu apellido">
+                        </div>
+                        <div class="col-2">
+                            <input type="tel" id="telefono" name="telefono" required placeholder="Tu telefono">
+                        </div>
+                        <div class="col-1">
+                            <input type="text" id="asunto" name="asunto" required placeholder="Asunto">
+                        </div>
+                        <div class="col-1">
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="col-1">
+                            <input type="submit" value="Enviar" id="enviar">
+                        </div>
+                        </form>
+                    </div>
+                </article>
+            </section>
+            <div id="resultados_contacto">
+                <div id="cierra_resultados" onclick="cerrar()">
+                    <img src="images/x.svg" alt="cierra">
+                </div>
+                <p id="nombre_contacto"></p>
+                <p id="apellido_contacto"></p>
+                <p id="telefono_contacto"></p>
+                <p id="asunto_contacto"></p>
+                <p id="mensaje_contacto"></p>
+            </div>
+        </section>
+        <footer>
+            <div class="contenido_footer">
+                <div class="widget">
+                    <h4>Nosotros</h4>
+                    <p>Corporis commodi dignissimos optio unde repellat possimus consectetur autem nulla. Maxime, inventore dolorum. Saepe optio minus quos placeat nemo!</p>
+                </div>
+                <div class="widget">
+                    <h4>Contacto</h4>
+                    <p><a href="mailto:info@ejemplo.com">info@ejemplo.com</a></p>
+                    <p>Telefonos: <a href="tel:+34666666666">666 666 666</a></p>
+                    <p>Horario: Lunes-Viernes</p>
+                    <p>09:00 / 14:00 - 16:00 / 20:00</p>
+                </div>
+                <div class="widget">
+                    <h4>Síguenos en redes</h4>
+                    <ul class="rrss">
+                        <li>
+                            <a href="https://facebook.com" target="_blank">
+                                <img width="40px" src="images/640px-Facebook_icon.svg.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/?hl=es" target="_blank">
+                                <img width="40px" src="images/insta.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=es" target="_blank">
+                                <img width="40px"src="images/Twitter-logo.svg.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2022 Todos los derechos reservadosAll Rights Reserved. <a target="_blank" href="https://google.es/">Diseño Web</a> MiEstudio<sup>®</sup>
+            </div>
+        </footer>
+    </div>
+    <script src="js/mi-js.js"></script>
+</body>
+</html>
